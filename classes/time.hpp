@@ -1,16 +1,15 @@
 #ifndef TIME_H
 #define TIME_H
 
+
 class Time {
 private:
     char* str_time;
     int int_time;
 
-    int convert_str_to_int(const char* str);
+    int convert_str_to_int();
 
     int get_len();
-
-    bool is_correct_str_time();
 
 public:
     Time();
@@ -21,7 +20,7 @@ public:
 
     virtual ~Time();
 
-    void enter_str_time();
+    void enter_str_time(const char* msg);
 
     int get_int_time();
 };

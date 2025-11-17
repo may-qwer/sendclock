@@ -9,6 +9,7 @@
                 "-g",
                 "${file}",
                 "${workspaceFolder}/classes/clock.cpp",
+                "${workspaceFolder}/classes/time.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

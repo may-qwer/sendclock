@@ -6,13 +6,17 @@
 
 using namespace std;
 
+#define MSG_ENTER "Enter timer time in seconds: "
 #define WIDTH 15
 #define HEIGHT 18
 #define COUNT_OF_CAVES 49
 
 int main() {
-
-    int time = 10;// sec
+    Time t;
+    t.enter_str_time(MSG_ENTER);
+    int time = t.get_int_time();
+    cout << time << endl;
+    // int time = 10;// sec
     int time_dilay = int(time*1000/COUNT_OF_CAVES);
     Clock cl(WIDTH, HEIGHT);
     while (!cl.is_done()) {
